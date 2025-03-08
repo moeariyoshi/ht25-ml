@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  prac1:
+    container_name: prac1  # Custom container name
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - ENV=production
+    restart: on-failure
